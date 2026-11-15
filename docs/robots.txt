@@ -1,0 +1,3 @@
+# Project-path copy; crawler rules apply only at the origin root.
+User-agent: *
+Allow: /

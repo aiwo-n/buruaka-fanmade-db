@@ -1,0 +1,21 @@
+name: 操作・表示・保存の不具合
+description: 再現手順を共有します。個人の保存データは必要ありません。
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順と起きたこと
+      description: 画面名、操作、期待した結果を記載してください。
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: OS・ブラウザ・アプリ版・発生日
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 補足（任意）
+      description: 保存JSON、所持数、認証情報、個人情報は投稿しないでください。画像内のプレイヤーID・名前・通知を隠してください。

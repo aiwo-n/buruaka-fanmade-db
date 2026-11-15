@@ -1,0 +1,48 @@
+name: 育成データの不足・誤り
+description: 不足または誤りを候補として報告します。自動採用は行いません。
+body:
+  - type: markdown
+    attributes:
+      value: 保存JSONや所持数の一覧を添付する必要はありません。画像のプレイヤーID・名前・通知などは隠してください。確認のための育成・素材消費は不要です。
+  - type: input
+    id: student
+    attributes:
+      label: 対象生徒（衣装を含む）
+    validations:
+      required: true
+  - type: input
+    id: item
+    attributes:
+      label: 育成項目
+      placeholder: EX、NS、装備、固有武器など
+    validations:
+      required: true
+  - type: input
+    id: stage
+    attributes:
+      label: 対象Lv・Tier・段階
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 不足・誤りの内容
+      description: アプリの「報告文をコピー」で作った文面も貼り付けられます。
+    validations:
+      required: true
+  - type: textarea
+    id: candidate
+    attributes:
+      label: 正しい値の候補（不明なら空欄）
+  - type: input
+    id: version
+    attributes:
+      label: ゲーム版・確認日
+      description: JP版、確認した日。不明なら「不明」と記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 任意の出典・画像
+      description: 一画面で分かる範囲、確認できなかった条件も記載できます。他人の画像の無断転載を避けてください。
